@@ -1,0 +1,225 @@
+11:21:31.187 [restartedMain] ERROR c.a.d.f.s.StatFilter - [internalAfterStatementExecute,478] - slow sql 1525 millis. select table_id, table_name, table_comment, class_name, tpl_category, package_name, module_name, business_name, function_name, function_author, options, create_by, create_time, update_by, update_time, remark from gen_table[]
+11:21:33.125 [restartedMain] ERROR c.a.d.f.s.StatFilter - [internalAfterStatementExecute,478] - slow sql 1016 millis. insert into gen_table_column (table_id,column_name,is_required,is_pk,sort,column_comment,is_increment,column_type)
+        SELECT ?,
+        column_name,
+        ( CASE WHEN ( is_nullable = 'no'   &&   column_key != 'PRI' ) THEN '1' ELSE NULL END ) AS is_required,
+        ( CASE WHEN column_key = 'PRI' THEN '1' ELSE '0' END ) AS is_pk,
+        ordinal_position AS sort,
+        column_comment,
+        ( CASE WHEN extra = 'auto_increment' THEN '1' ELSE '0' END ) AS is_increment,
+        column_type
+        FROM
+            information_schema.COLUMNS
+        WHERE
+            table_schema = ( SELECT DATABASE ( ) )
+            AND table_name = ?
+        ORDER BY
+            ordinal_position[125,"flyway_schema_history"]
+11:21:34.969 [restartedMain] ERROR c.a.d.f.s.StatFilter - [internalAfterStatementExecute,478] - slow sql 1015 millis. insert into gen_table_column (table_id,column_name,is_required,is_pk,sort,column_comment,is_increment,column_type)
+        SELECT ?,
+        column_name,
+        ( CASE WHEN ( is_nullable = 'no'   &&   column_key != 'PRI' ) THEN '1' ELSE NULL END ) AS is_required,
+        ( CASE WHEN column_key = 'PRI' THEN '1' ELSE '0' END ) AS is_pk,
+        ordinal_position AS sort,
+        column_comment,
+        ( CASE WHEN extra = 'auto_increment' THEN '1' ELSE '0' END ) AS is_increment,
+        column_type
+        FROM
+            information_schema.COLUMNS
+        WHERE
+            table_schema = ( SELECT DATABASE ( ) )
+            AND table_name = ?
+        ORDER BY
+            ordinal_position[126,"sys_config"]
+11:21:36.812 [restartedMain] ERROR c.a.d.f.s.StatFilter - [internalAfterStatementExecute,478] - slow sql 1841 millis. delete from gen_table_column where table_id = ?[127]
+11:21:38.655 [restartedMain] ERROR c.a.d.f.s.StatFilter - [internalAfterStatementExecute,478] - slow sql 1016 millis. delete from gen_table_column where table_id = ?[128]
+11:21:40.201 [restartedMain] ERROR c.a.d.f.s.StatFilter - [internalAfterStatementExecute,478] - slow sql 1543 millis. insert into gen_table_column (table_id,column_name,is_required,is_pk,sort,column_comment,is_increment,column_type)
+        SELECT ?,
+        column_name,
+        ( CASE WHEN ( is_nullable = 'no'   &&   column_key != 'PRI' ) THEN '1' ELSE NULL END ) AS is_required,
+        ( CASE WHEN column_key = 'PRI' THEN '1' ELSE '0' END ) AS is_pk,
+        ordinal_position AS sort,
+        column_comment,
+        ( CASE WHEN extra = 'auto_increment' THEN '1' ELSE '0' END ) AS is_increment,
+        column_type
+        FROM
+            information_schema.COLUMNS
+        WHERE
+            table_schema = ( SELECT DATABASE ( ) )
+            AND table_name = ?
+        ORDER BY
+            ordinal_position[128,"sys_dict_data"]
+11:21:41.217 [restartedMain] ERROR c.a.d.f.s.StatFilter - [internalAfterStatementExecute,478] - slow sql 1014 millis. delete from gen_table_column where table_id = ?[129]
+11:21:42.240 [restartedMain] ERROR c.a.d.f.s.StatFilter - [internalAfterStatementExecute,478] - slow sql 1020 millis. insert into gen_table_column (table_id,column_name,is_required,is_pk,sort,column_comment,is_increment,column_type)
+        SELECT ?,
+        column_name,
+        ( CASE WHEN ( is_nullable = 'no'   &&   column_key != 'PRI' ) THEN '1' ELSE NULL END ) AS is_required,
+        ( CASE WHEN column_key = 'PRI' THEN '1' ELSE '0' END ) AS is_pk,
+        ordinal_position AS sort,
+        column_comment,
+        ( CASE WHEN extra = 'auto_increment' THEN '1' ELSE '0' END ) AS is_increment,
+        column_type
+        FROM
+            information_schema.COLUMNS
+        WHERE
+            table_schema = ( SELECT DATABASE ( ) )
+            AND table_name = ?
+        ORDER BY
+            ordinal_position[129,"sys_dict_type"]
+11:21:45.133 [restartedMain] ERROR c.a.d.f.s.StatFilter - [internalAfterStatementExecute,478] - slow sql 2891 millis. delete from gen_table_column where table_id = ?[130]
+11:21:48.714 [restartedMain] ERROR c.a.d.f.s.StatFilter - [internalAfterStatementExecute,478] - slow sql 1758 millis. insert into gen_table_column (table_id,column_name,is_required,is_pk,sort,column_comment,is_increment,column_type)
+        SELECT ?,
+        column_name,
+        ( CASE WHEN ( is_nullable = 'no'   &&   column_key != 'PRI' ) THEN '1' ELSE NULL END ) AS is_required,
+        ( CASE WHEN column_key = 'PRI' THEN '1' ELSE '0' END ) AS is_pk,
+        ordinal_position AS sort,
+        column_comment,
+        ( CASE WHEN extra = 'auto_increment' THEN '1' ELSE '0' END ) AS is_increment,
+        column_type
+        FROM
+            information_schema.COLUMNS
+        WHERE
+            table_schema = ( SELECT DATABASE ( ) )
+            AND table_name = ?
+        ORDER BY
+            ordinal_position[131,"sys_job_log"]
+11:21:50.205 [restartedMain] ERROR c.a.d.f.s.StatFilter - [internalAfterStatementExecute,478] - slow sql 1487 millis. delete from gen_table_column where table_id = ?[132]
+11:21:52.686 [restartedMain] ERROR c.a.d.f.s.StatFilter - [internalAfterStatementExecute,478] - slow sql 1632 millis. delete from gen_table_column where table_id = ?[133]
+11:21:54.323 [restartedMain] ERROR c.a.d.f.s.StatFilter - [internalAfterStatementExecute,478] - slow sql 1635 millis. insert into gen_table_column (table_id,column_name,is_required,is_pk,sort,column_comment,is_increment,column_type)
+        SELECT ?,
+        column_name,
+        ( CASE WHEN ( is_nullable = 'no'   &&   column_key != 'PRI' ) THEN '1' ELSE NULL END ) AS is_required,
+        ( CASE WHEN column_key = 'PRI' THEN '1' ELSE '0' END ) AS is_pk,
+        ordinal_position AS sort,
+        column_comment,
+        ( CASE WHEN extra = 'auto_increment' THEN '1' ELSE '0' END ) AS is_increment,
+        column_type
+        FROM
+            information_schema.COLUMNS
+        WHERE
+            table_schema = ( SELECT DATABASE ( ) )
+            AND table_name = ?
+        ORDER BY
+            ordinal_position[133,"sys_menu"]
+11:21:57.651 [restartedMain] ERROR c.a.d.f.s.StatFilter - [internalAfterStatementExecute,478] - slow sql 1481 millis. delete from gen_table_column where table_id = ?[135]
+11:22:01.491 [restartedMain] ERROR c.a.d.f.s.StatFilter - [internalAfterStatementExecute,478] - slow sql 2044 millis. insert into gen_table_column (table_id,column_name,is_required,is_pk,sort,column_comment,is_increment,column_type)
+        SELECT ?,
+        column_name,
+        ( CASE WHEN ( is_nullable = 'no'   &&   column_key != 'PRI' ) THEN '1' ELSE NULL END ) AS is_required,
+        ( CASE WHEN column_key = 'PRI' THEN '1' ELSE '0' END ) AS is_pk,
+        ordinal_position AS sort,
+        column_comment,
+        ( CASE WHEN extra = 'auto_increment' THEN '1' ELSE '0' END ) AS is_increment,
+        column_type
+        FROM
+            information_schema.COLUMNS
+        WHERE
+            table_schema = ( SELECT DATABASE ( ) )
+            AND table_name = ?
+        ORDER BY
+            ordinal_position[136,"sys_post"]
+11:22:04.771 [restartedMain] ERROR c.a.d.f.s.StatFilter - [internalAfterStatementExecute,478] - slow sql 3278 millis. delete from gen_table_column where table_id = ?[137]
+11:22:06.409 [restartedMain] ERROR c.a.d.f.s.StatFilter - [internalAfterStatementExecute,478] - slow sql 1635 millis. insert into gen_table_column (table_id,column_name,is_required,is_pk,sort,column_comment,is_increment,column_type)
+        SELECT ?,
+        column_name,
+        ( CASE WHEN ( is_nullable = 'no'   &&   column_key != 'PRI' ) THEN '1' ELSE NULL END ) AS is_required,
+        ( CASE WHEN column_key = 'PRI' THEN '1' ELSE '0' END ) AS is_pk,
+        ordinal_position AS sort,
+        column_comment,
+        ( CASE WHEN extra = 'auto_increment' THEN '1' ELSE '0' END ) AS is_increment,
+        column_type
+        FROM
+            information_schema.COLUMNS
+        WHERE
+            table_schema = ( SELECT DATABASE ( ) )
+            AND table_name = ?
+        ORDER BY
+            ordinal_position[137,"sys_role"]
+11:22:10.199 [restartedMain] ERROR c.a.d.f.s.StatFilter - [internalAfterStatementExecute,478] - slow sql 1022 millis. insert into gen_table_column (table_id,column_name,is_required,is_pk,sort,column_comment,is_increment,column_type)
+        SELECT ?,
+        column_name,
+        ( CASE WHEN ( is_nullable = 'no'   &&   column_key != 'PRI' ) THEN '1' ELSE NULL END ) AS is_required,
+        ( CASE WHEN column_key = 'PRI' THEN '1' ELSE '0' END ) AS is_pk,
+        ordinal_position AS sort,
+        column_comment,
+        ( CASE WHEN extra = 'auto_increment' THEN '1' ELSE '0' END ) AS is_increment,
+        column_type
+        FROM
+            information_schema.COLUMNS
+        WHERE
+            table_schema = ( SELECT DATABASE ( ) )
+            AND table_name = ?
+        ORDER BY
+            ordinal_position[139,"sys_role_menu"]
+11:22:13.882 [restartedMain] ERROR c.a.d.f.s.StatFilter - [internalAfterStatementExecute,478] - slow sql 1018 millis. insert into gen_table_column (table_id,column_name,is_required,is_pk,sort,column_comment,is_increment,column_type)
+        SELECT ?,
+        column_name,
+        ( CASE WHEN ( is_nullable = 'no'   &&   column_key != 'PRI' ) THEN '1' ELSE NULL END ) AS is_required,
+        ( CASE WHEN column_key = 'PRI' THEN '1' ELSE '0' END ) AS is_pk,
+        ordinal_position AS sort,
+        column_comment,
+        ( CASE WHEN extra = 'auto_increment' THEN '1' ELSE '0' END ) AS is_increment,
+        column_type
+        FROM
+            information_schema.COLUMNS
+        WHERE
+            table_schema = ( SELECT DATABASE ( ) )
+            AND table_name = ?
+        ORDER BY
+            ordinal_position[141,"sys_user_post"]
+11:22:14.905 [restartedMain] ERROR c.a.d.f.s.StatFilter - [internalAfterStatementExecute,478] - slow sql 1021 millis. delete from gen_table_column where table_id = ?[142]
+11:22:15.936 [restartedMain] ERROR c.a.d.f.s.StatFilter - [internalAfterStatementExecute,478] - slow sql 1028 millis. insert into gen_table_column (table_id,column_name,is_required,is_pk,sort,column_comment,is_increment,column_type)
+        SELECT ?,
+        column_name,
+        ( CASE WHEN ( is_nullable = 'no'   &&   column_key != 'PRI' ) THEN '1' ELSE NULL END ) AS is_required,
+        ( CASE WHEN column_key = 'PRI' THEN '1' ELSE '0' END ) AS is_pk,
+        ordinal_position AS sort,
+        column_comment,
+        ( CASE WHEN extra = 'auto_increment' THEN '1' ELSE '0' END ) AS is_increment,
+        column_type
+        FROM
+            information_schema.COLUMNS
+        WHERE
+            table_schema = ( SELECT DATABASE ( ) )
+            AND table_name = ?
+        ORDER BY
+            ordinal_position[142,"sys_user_role"]
+11:22:16.954 [restartedMain] ERROR c.a.d.f.s.StatFilter - [internalAfterStatementExecute,478] - slow sql 1015 millis. delete from gen_table_column where table_id = ?[143]
+11:22:21.214 [restartedMain] ERROR c.a.d.f.s.StatFilter - [internalAfterStatementExecute,478] - slow sql 1590 millis. delete from gen_table_column where table_id = ?[145]
+11:22:24.533 [restartedMain] ERROR c.a.d.f.s.StatFilter - [internalAfterStatementExecute,478] - slow sql 2354 millis. delete from gen_table_column where table_id = ?[146]
+11:22:26.169 [restartedMain] ERROR c.a.d.f.s.StatFilter - [internalAfterStatementExecute,478] - slow sql 1633 millis. insert into gen_table_column (table_id,column_name,is_required,is_pk,sort,column_comment,is_increment,column_type)
+        SELECT ?,
+        column_name,
+        ( CASE WHEN ( is_nullable = 'no'   &&   column_key != 'PRI' ) THEN '1' ELSE NULL END ) AS is_required,
+        ( CASE WHEN column_key = 'PRI' THEN '1' ELSE '0' END ) AS is_pk,
+        ordinal_position AS sort,
+        column_comment,
+        ( CASE WHEN extra = 'auto_increment' THEN '1' ELSE '0' END ) AS is_increment,
+        column_type
+        FROM
+            information_schema.COLUMNS
+        WHERE
+            table_schema = ( SELECT DATABASE ( ) )
+            AND table_name = ?
+        ORDER BY
+            ordinal_position[146,"t_hall"]
+11:22:28.525 [restartedMain] ERROR c.a.d.f.s.StatFilter - [internalAfterStatementExecute,478] - slow sql 2354 millis. delete from gen_table_column where table_id = ?[147]
+11:22:36.312 [restartedMain] ERROR c.a.d.f.s.StatFilter - [internalAfterStatementExecute,478] - slow sql 1669 millis. delete from gen_table_column where table_id = ?[151]
+11:22:38.717 [restartedMain] ERROR c.a.d.f.s.StatFilter - [internalAfterStatementExecute,478] - slow sql 1473 millis. delete from gen_table_column where table_id = ?[152]
+11:22:41.132 [restartedMain] ERROR c.a.d.f.s.StatFilter - [internalAfterStatementExecute,478] - slow sql 1589 millis. delete from gen_table_column where table_id = ?[153]
+11:22:42.821 [restartedMain] ERROR c.a.d.f.s.StatFilter - [internalAfterStatementExecute,478] - slow sql 1687 millis. insert into gen_table_column (table_id,column_name,is_required,is_pk,sort,column_comment,is_increment,column_type)
+        SELECT ?,
+        column_name,
+        ( CASE WHEN ( is_nullable = 'no'   &&   column_key != 'PRI' ) THEN '1' ELSE NULL END ) AS is_required,
+        ( CASE WHEN column_key = 'PRI' THEN '1' ELSE '0' END ) AS is_pk,
+        ordinal_position AS sort,
+        column_comment,
+        ( CASE WHEN extra = 'auto_increment' THEN '1' ELSE '0' END ) AS is_increment,
+        column_type
+        FROM
+            information_schema.COLUMNS
+        WHERE
+            table_schema = ( SELECT DATABASE ( ) )
+            AND table_name = ?
+        ORDER BY
+            ordinal_position[153,"t_salesman"]

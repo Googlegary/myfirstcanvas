@@ -1,0 +1,43 @@
+16:34:54.875 [restartedMain] INFO  c.i.IkingManageApplication - [logStarting,50] - Starting IkingManageApplication on huangjiaruideMacBook-Pro.local with PID 61962 (started by huangjiarui in /Users/huangjiarui/Desktop/信报箱/letterbox-api)
+16:34:54.889 [restartedMain] INFO  c.i.IkingManageApplication - [logStartupProfileInfo,679] - The following profiles are active: dev
+16:34:57.108 [restartedMain] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-1018"]
+16:34:57.116 [restartedMain] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+16:34:57.116 [restartedMain] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet Engine: Apache Tomcat/9.0.13
+16:34:57.122 [restartedMain] INFO  o.a.c.c.AprLifecycleListener - [log,173] - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/huangjiarui/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+16:34:57.193 [restartedMain] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring embedded WebApplicationContext
+16:35:00.857 [restartedMain] INFO  c.a.d.p.DruidDataSource - [init,991] - {dataSource-1} inited
+16:35:00.909 [restartedMain] INFO  o.q.i.StdSchedulerFactory - [instantiate,1208] - Using default implementation for ThreadExecutor
+16:35:00.930 [restartedMain] INFO  o.q.c.SchedulerSignalerImpl - [<init>,61] - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+16:35:00.931 [restartedMain] INFO  o.q.c.QuartzScheduler - [<init>,229] - Quartz Scheduler v.2.3.0 created.
+16:35:00.932 [restartedMain] INFO  o.q.s.RAMJobStore - [initialize,155] - RAMJobStore initialized.
+16:35:00.933 [restartedMain] INFO  o.q.c.QuartzScheduler - [initialize,294] - Scheduler meta-data: Quartz Scheduler (v2.3.0) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+16:35:00.934 [restartedMain] INFO  o.q.i.StdSchedulerFactory - [instantiate,1362] - Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+16:35:00.934 [restartedMain] INFO  o.q.i.StdSchedulerFactory - [instantiate,1366] - Quartz scheduler version: 2.3.0
+16:35:00.935 [restartedMain] INFO  o.q.c.QuartzScheduler - [setJobFactory,2287] - JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@6f675129
+16:35:01.635 [restartedMain] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - [initHandlerMethods,69] - Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+16:35:02.565 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - [start,151] - Context refreshed
+16:35:02.583 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - [start,154] - Found 1 custom documentation plugin(s)
+16:35:02.627 [restartedMain] INFO  s.d.s.w.s.ApiListingReferenceScanner - [scan,41] - Scanning for api listing references
+16:35:02.789 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: getInfoUsingGET_1
+16:35:02.796 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: addUsingPOST_1
+16:35:02.802 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: getInfoUsingGET_2
+16:35:02.804 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: listUsingGET_1
+16:35:02.806 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: getInfoUsingGET_3
+16:35:02.812 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: exportUsingGET_1
+16:35:02.813 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: listUsingGET_2
+16:35:02.814 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: removeUsingDELETE_1
+16:35:02.816 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: cleanUsingDELETE_1
+16:35:02.819 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: exportUsingGET_2
+16:35:02.820 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: listUsingGET_3
+16:35:02.821 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: removeUsingDELETE_2
+16:35:02.830 [restartedMain] INFO  o.q.c.QuartzScheduler - [start,547] - Scheduler quartzScheduler_$_NON_CLUSTERED started.
+16:35:02.989 [restartedMain] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Starting ProtocolHandler ["http-nio-1018"]
+16:35:03.007 [restartedMain] INFO  o.a.t.u.n.NioSelectorPool - [log,173] - Using a shared selector for servlet write/read
+16:35:03.029 [restartedMain] INFO  c.i.IkingManageApplication - [logStarted,59] - Started IkingManageApplication in 8.596 seconds (JVM running for 9.79)

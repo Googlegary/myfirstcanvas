@@ -1,0 +1,6 @@
+17:59:00.724 [Thread-25] INFO  o.q.c.QuartzScheduler - [standby,585] - Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+17:59:00.815 [Thread-25] INFO  o.q.c.QuartzScheduler - [shutdown,666] - Scheduler quartzScheduler_$_NON_CLUSTERED shutting down.
+17:59:00.859 [Thread-25] INFO  o.q.c.QuartzScheduler - [standby,585] - Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+17:59:00.861 [Thread-25] INFO  o.q.c.QuartzScheduler - [shutdown,740] - Scheduler quartzScheduler_$_NON_CLUSTERED shutdown complete.
+17:59:00.863 [Thread-25] INFO  sys-user - [shutdownAsyncManager,28] - ====关闭后台任务任务线程池====
+17:59:00.910 [Thread-25] INFO  c.a.d.p.DruidDataSource - [close,1928] - {dataSource-1} closed
